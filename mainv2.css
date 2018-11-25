@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+	background-attachment : fixed; 
+}
+
+h1, h2, h3 {
+	margin: 0;
+	text-decoration:none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+header {
+    /*background-color:#CCC;*/
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+
+section {
+	min-height: 100vh;
+}
+
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+    text-align: right;
+	font-family: "Open Sans", "Nunito Sans", "PT Sans", "Work Sans", Arimo, Lato, monospace;
+}
+
+.main-content{
+	padding: 40px 0;
+}
+
+
+.band-items {
+	display: flex;
+	flex-wrap: wrap; 
+	margin-top: 25px;
+	justify-content: center;
+}
+
+.band-member {
+	font-size: 20px;
+	margin: 10% 0;
+	width: 230px;
+	height: 200 px;
+	text-align: left;
+}
+
+.member-image {
+	width: 100%;
+    height: 75%;
+}
+
+
+.about-field{
+	display: inline-block;
+	position: relative;
+    top: 10px;
+	right: 10px;
+	width: 750px;
+}
+
+.about-image{
+	width: 100%;
+    height: auto;
+}
+
+.about-text{
+	position: relative;
+    top: -200px;
+    right: 200px;
+	text-align: justify;
+	width: 280px;
+	order: -1;
+	background-color: #25072e;
+	padding: 50px 30px;
+}
+
+.concerts {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: flex-end;
+}
+
+
+.concert-item {
+	font-size: 15px;
+	margin: 0 40px;
+	margin-right: 0;
+	width: 400px;
+	height: 350px;
+
+}
+
+.concert-image{
+	width: 100%;
+    height: auto;
+
+}
+
+.concert-under{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.concert-text{
+	text-align: left;
+}
+
+.concert-date{
+	margin: 0;
+}
+
+.concert-location{
+	margin: 0;
+}
+
+.photos {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: space-between;
+}
+
+.photos-item{
+	margin: 5px;
+	width: 310px;
+	height: 230px;
+}
+
+.photos-image{
+	width: 100%;
+    height: auto;
+}
+
+.contacts {
+	display: flex;
+	flex-wrap: wrap; 
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.contact-item{
+	margin: 5px;
+	width: 900px;
+	height: 300px;
+}
+
+.contact-two{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 15px 0;
+}
+
+.contact-image{
+	width: 450px;
+    height: auto;
+}
+
+address{
+	align-self: center;
+	padding: 50px;
+	width: 400px;
+	text-align: left;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+h2{
+	color: #ef00be;
+	font-size: 28px;
+	font-weight: bold;
+	opacity: 1.0;	
+	letter-spacing: 4.5px  ;
+}
+
+h3{
+	color: #dbd8fb;
+	font-size: 15px;
+	opacity: 1.0;
+	font-weight: bold;
+	letter-spacing: 3.8px ;
+	text-transform: uppercase;
+}
+
+.main-navigation-item{
+	padding: 5px;
+}
+
+.main-navigation-text{
+	color: #ef00be;
+	font-size: 13px;
+	opacity: 0.8;
+	font-family: Helvetica, "Nunito Sans", "PT Sans", "Work Sans", Arimo, Lato, monospace;
+	letter-spacing: 6.7px;
+	text-decoration:none;
+}
+
+.body1{
+	color: #ccc8ff;
+	font-size: 13px;
+	opacity: 0.8;
+}
+
+.body2{
+	color: #ccc8ff;
+	font-size: 13px;
+	opacity: 0.8;
+	letter-spacing: 1.5px  ;
+}
+
+button{	
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 1.6px;
+	color: #dbd8fb;
+	background-color: #25072e;
+	height: 25px;
+	border-radius: 5px;
+	border: 0px;
+	text-align: center;
+}
+
+.form-input{	
+	background-color: #25072e;
+	opacity: 0.8;
+}
+
+.form-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 10px 0;
+}
+
+.form-input{
+	height: 30px;
+	width: 300px;
+	border: 0px;
+	border-radius: 5px;
+}
+
+.icons-item{
+	width: 30px;
+	padding: 5px 0;
+}
+
+.icons-img{
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.logo{
+	padding: 20px 0;
+}
