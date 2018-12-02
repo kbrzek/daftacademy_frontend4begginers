@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* 
+######################################
+TYPOGRAFIA
+######################################
+*/
+
+body {
+    color: rgba(204, 200, 255, 0.8);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+a {
+    color: #EF008E;
+    text-decoration: none;
+}
+
+/* 
+######################################
+PRZYCISKI
+######################################
+*/
+
+.button {
+    padding: 7px 15px;
+    border-radius: 3px;
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.1);
+
+    color: rgba(204, 200, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+}
+
+/* 
+######################################
+FORMULARZE
+######################################
+*/
+
+.form__field {
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.form__input {
+    display: block;
+    height: 35px;
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(219, 216, 251, 0.1);
+}
+
+
+/* 
+######################################
+GŁÓWNY LAYOUT STRONY
+######################################
+*/
+
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+	width: 15vw;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+	width: 15vw;
+}
+
+.page-content {
+    /*margin-left: 220px;*/
+	margin-left: 20vw;
+    padding: 0 10%;
+}
+
+
+/* 
+######################################
+NAWIGACJA
+######################################
+*/
+
+.page-navigation__items {
+    padding-top: 15px;
+}
+
+.page-navitagion__item a {
+    color: rgba(239, 0, 142, 0.6);
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6.7px;
+}
+
+/* 
+######################################
+LINKI DO SOCIAL MEDIA
+######################################
+*/
+
+
+.social-links__item + .social-links__item {
+    margin-top: 15px;
+}
+
+.social-links__item img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 700px),  screen and (max-height: 490px){
+	.page-header {
+		position: relative;
+		top: 50px;
+        left: 50px;
+	}
+
+	.page-footer {
+		position: relative;
+		bottom: 50px;
+        left: 50px;
+        width: 100vw;
+	}
+	
+	.page-navigation__items {
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap; 
+		flex-direction: row;
+        align-items: space-beetwen;
+        margin-bottom: 50px;
+	}
+	
+	.page-navitagion__item{
+		margin: 0 10px;
+		margin-bottom: 10px;
+    }
+    
+    .social-links {
+		display: flex;
+		direction: row;
+        align-items: center ;
+        justify-content: center;
+		position: relative;
+		top: 15px;
+	}
+	
+	.social-links__item {
+		margin: 10px;
+    }
+    
+    .page-content {
+        margin-left: 50px;
+    }
+
+}
+
+
+
+/* 
+######################################
+STYLE WSPÓLNE DLA WSZYSTKICH SEKCJI
+######################################
+*/
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+.content-section__header {
+    margin-bottom: 60px;
+    color: #EF008E;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+}
+
+.content-section__body {
+    flex-grow: 1;
+}
+
+/* 
+######################################
+SEKCJA "HOME"
+######################################
+*/
+
+.content-section.home-section {
+    align-items: center;
+}
+
+.band-members {
+    display: flex;
+	flex-wrap: wrap; 
+    flex-direction: row;
+    align-items: center;
+	justify-content: center;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+/*
+Tymczasowo ukrywamy tę sekcję, zajmiemy się nią na następnych zajęciach.
+*/
+.band-members__name,
+.band-members__desc {
+		justify-content: center;
+}
+
+/* 
+######################################
+SEKCJA "ABOUT"
+######################################
+*/
+
+.about {
+    position: relative;
+    margin-left: 290px;
+    margin-bottom: 115px;
+	width: 50vw;
+}
+
+.about__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+}
+
+.about__desc-header {
+    margin-bottom: 30px;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__desc {
+    position: absolute;   
+    left: -290px;
+    bottom: -115px;
+    width: 380px;
+    padding: 30px;
+    background-color: #25072e;
+    border-bottom: 3px solid #EF008E;
+}
+
+@media screen and (max-width: 1200px) {
+	.about {
+	display: flex;
+	flex-wrap: wrap; 
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .about__desc {
+    position: relative;   
+    left: 0px;
+    bottom: 0px;
+	width: 100%;
+	margin-top: 15px;
+	}
+}
+
+/* 
+######################################
+SEKCJA "CONCERTS"
+######################################
+*/
+
+.concerts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.concerts__item {
+    flex-basis: 50%;
+    padding: 0 0 45px 55px;
+}
+
+.concerts__image {
+    width: 100%;
+    border-bottom: 3px solid #EF008E;
+}
+
+.concerts__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.concerts__info-base {
+    flex-grow: 1;
+}
+
+.concerts__date {
+    margin: 0;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+}
+
+.concerts__location {
+    margin: 0;
+    letter-spacing: 3.8px;
+}
+
+@media screen and (max-width: 1080px) {
+	.concerts {
+    width: 100%;
+  }
+  .concerts__item {
+    flex-basis: 100%;
+	}
+}
+
+/* 
+######################################
+SEKCJA "VIDEO"
+######################################
+*/
+
+.embedded-video {
+    border-top: 3px solid #EF008E;
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+/* 
+######################################
+SEKCJA "PHOTOS"
+######################################
+*/
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 80%;
+	justify-content: space-around;
+}
+
+.gallery__item {
+    flex-basis: 33.3%;
+    padding: 0 0 20px 20px;
+}
+
+.gallery__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+}
+
+@media screen and (max-width: 1050px) {
+	.gallery {
+    min-width: 100%;
+	}
+	
+	.gallery__item {
+	width: 100%;
+	flex-basis: 100%;
+}
+}
+
+/* 
+######################################
+SEKCJA "CONTACT"
+######################################
+*/
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact__image img {
+    max-width: 100%;
+}
+
+.contact__address {
+    padding: 70px;
+    font-style: normal;
+}
+
+.contact__form {
+    flex-basis: 50%;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+.contact__form .button {
+    margin-top: 20px;
+}
